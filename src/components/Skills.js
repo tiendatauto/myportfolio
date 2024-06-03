@@ -1,18 +1,20 @@
-import Reacticon from '../assets/img/React-icon.png';
-import HTML5 from '../assets/img/HTML5.png';
-import CSS from '../assets/img/css.png';
-import Carousel from 'react-multi-carousel';
-import Javascript from '../assets/img/Javascript.png';
-import reduxpng from '../assets/img/reduxpng.png';
-import typescript from '../assets/img/typescript.png';
-import tailwind from '../assets/img/tailwind.png';
-import reactQuery from '../assets/img/react-query.svg';
-import 'react-multi-carousel/lib/styles.css';
-import arrow1 from '../assets/img/arrow1.svg';
-import arrow2 from '../assets/img/arrow2.svg';
-import colorSharp from '../assets/img/color-sharp.png';
-import TrackVisibility from 'react-on-screen';
-import 'animate.css';
+import Reacticon from "../assets/img/React-icon.png";
+import HTML5 from "../assets/img/HTML5.png";
+import CSS from "../assets/img/css.png";
+import Carousel from "react-multi-carousel";
+import Javascript from "../assets/img/Javascript.png";
+import reduxpng from "../assets/img/reduxpng.png";
+import typescript from "../assets/img/typescript.png";
+import tailwind from "../assets/img/tailwind.png";
+import reactQuery from "../assets/img/react-query.svg";
+import nestJS from "../assets/img/nestjs-icon.png";
+import expressJS from "../assets/img/expressjs-icon.png";
+import mysql from "../assets/img/mysql-logo.png";
+import mongo from "../assets/img/mongo-logo.png";
+import "react-multi-carousel/lib/styles.css";
+import colorSharp from "../assets/img/color-sharp.png";
+import TrackVisibility from "react-on-screen";
+import "animate.css";
 
 export const Skills = () => {
   const responsive = {
@@ -89,6 +91,28 @@ export const Skills = () => {
                   <div className="item">
                     <img src={reactQuery} alt="Image" />
                     <h5>React Query</h5>
+                  </div>
+                </div>
+
+                <div className="item-wrap">
+                  <div className="item">
+                    <img src={nestJS} alt="Image" />
+                    <h5>NestJS</h5>
+                  </div>
+                  <div className="item">
+                    <img src={expressJS} alt="Image" />
+                    <h5>ExpressJS</h5>
+                  </div>
+                </div>
+
+                <div className="item-wrap">
+                  <div className="item">
+                    <img src={mysql} alt="Image" />
+                    <h5>MySQL</h5>
+                  </div>
+                  <div className="item">
+                    <img src={mongo} alt="Image" />
+                    <h5>MongoDB</h5>
                   </div>
                 </div>
               </Carousel>

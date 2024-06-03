@@ -1,20 +1,20 @@
-import { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import headerImg from '../assets/img/header-img.svg';
-import headerImg2 from '../assets/img/header-img2.jpg';
-import cvPdf from '../assets/file/datNHTCV.pdf';
-import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../assets/img/header-img.svg";
+import headerImg2 from "../assets/img/header-img2.jpg";
+import cvPdf from "../assets/file/datNHTCV.pdf";
+import { ArrowDownCircle, ArrowRightCircle } from "react-bootstrap-icons";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   // const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
-  const toRotate = ['Tien Dat'];
+  const toRotate = ["Tien Dat"];
   const period = 2000;
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export const Banner = () => {
       setIsDeleting(true);
       setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
-    } else if (isDeleting && updatedText === '') {
+    } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
@@ -64,7 +64,7 @@ export const Banner = () => {
               <h1>
                 {`Hi! My name is `}
                 <div
-                  style={{ fontSize: '60px' }}
+                  style={{ fontSize: "60px" }}
                   className="txt-rotate"
                   dataperiod="1000"
                   data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
@@ -82,8 +82,8 @@ export const Banner = () => {
                 for a front-end developer position .I would like to be a part of
                 company, i will contribute to development of company
               </p>
-              <a href={cvPdf} download="CV_File.pdf">
-                <button style={{ backgroundColor: 'red', padding: '20px' }}>
+              <a href={cvPdf} download="NguyenHoangTienDat_CV.pdf">
+                <button style={{ backgroundColor: "red", padding: "20px" }}>
                   Download my resume <ArrowDownCircle size={25} />
                 </button>
               </a>
