@@ -12,7 +12,10 @@ import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
 import projImg11 from "../assets/img/project-img11.png";
 import projImg12 from "../assets/img/project-img12.png";
+import projImg13 from "../assets/img/project-img13.png";
+import projImg14 from "../assets/img/project-img14.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -107,7 +110,7 @@ export const Projects = () => {
           <span>Back End: Nodejs , ExpressJS, Prisma, MySQL</span>
         </div>
       ),
-      imgUrl: projImg7,
+      imgUrl: projImg13,
       urlPrj: "https://bookingmovie-datnht.vercel.app/",
     },
     {
@@ -121,7 +124,7 @@ export const Projects = () => {
           <span>Back End: Nodejs, NestJS, MongoDB, Mongoose</span>
         </div>
       ),
-      imgUrl: projImg8,
+      imgUrl: projImg14,
       urlPrj: "https://itviec-datnht.vercel.app/",
     },
   ];
