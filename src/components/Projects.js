@@ -33,12 +33,12 @@ export const Projects = () => {
       imgUrl: projImg2,
       urlPrj: "https://zingmp3-datnht.vercel.app/",
     },
-    // {
-    //   title: 'Movie Booking App',
-    //   description: 'React JS, Tailwind, Redux Thunk',
-    //   imgUrl: projImg3,
-    //   urlPrj: 'https://bookingmoive-datnht-tiendatauto999-gmailcom.vercel.app/',
-    // },
+    {
+      title: "Movie Booking App",
+      description: "React JS, Tailwind, Redux Thunk",
+      imgUrl: projImg3,
+      urlPrj: "https://bookingmovie-datnht-six.vercel.app/",
+    },
     {
       title: "Jira App",
       description: "React JS, Redux Saga, Boostrap",
