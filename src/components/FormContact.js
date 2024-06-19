@@ -28,10 +28,10 @@ export default function FormContact() {
     setButtonText("Sending...");
     emailjs
       .sendForm(
-        "service_h1inakw",
-        "template_2ukg229",
+        "service_4nzcqrd", // YOUR_SERVICE_ID
+        "template_i4fiuk4", // YOUR_TEMPLATE_ID
         form.current,
-        "uAj0nLCurTaZgFEuL"
+        "ZNrLFPv3I6OaVT69a" // YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -51,7 +51,7 @@ export default function FormContact() {
     //   },
     //   body: JSON.stringify(formDetails),
     // });
-    setButtonText("Send");
+    setButtonText("Sent");
     // let result = await response.json();
     setFormDetails(formInitialDetails);
     // if (result.code == 200) {
